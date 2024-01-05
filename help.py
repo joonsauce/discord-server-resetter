@@ -8,12 +8,16 @@ async def help(ctx, *, msg=""):
         embed.add_field(name="help", value="Displays the help menu, or information on a specific command. "
                                            "Usage: dsr!help <command>*", inline=False)
         embed.add_field(name="reset", value="Resets the server. Kicks all non-admin members if roles aren't specified. "
+                                            "Otherwise, kicks only the members in the specified roles, if they are NOT "
+                                            "administrators. You must separate roles with a comma."
                                             "Usage: dsr!reset <roles>*", inline=False)
     elif msg == "help":
         embed.add_field(name="help", value="Displays the help menu, or information on a specific command. "
                                            "Usage: dsr!help <command>*", inline=False)
     elif msg == "reset":
         embed.add_field(name="reset", value="Resets the server. Kicks all non-admin members if roles aren't specified. "
+                                            "Otherwise, kicks only the members in the specified roles, if they are NOT "
+                                            "administrators. You must separate roles with a comma."
                                             "Usage: dsr!reset <roles>*", inline=False)
     else:
         embed.add_field(name=msg, value="Command `"+msg+"` does not exist", inline=False)
